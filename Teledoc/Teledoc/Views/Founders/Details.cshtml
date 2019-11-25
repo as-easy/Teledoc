@@ -1,0 +1,58 @@
+﻿@model Teledoc.Models.Founder
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Информация об учредителе</h2>
+
+<div>
+    @*<h4>Founder</h4>*@
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Client.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Inn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Inn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date_Add)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date_Add)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date_Upd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date_Upd)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
